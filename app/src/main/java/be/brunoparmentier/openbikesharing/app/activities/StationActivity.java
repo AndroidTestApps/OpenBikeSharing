@@ -285,6 +285,7 @@ public class StationActivity extends Activity {
         if (favorite) {
             stationsDataSource.addFavoriteStation(station.getId());
             favStar.setIcon(R.drawable.ic_menu_favorite);
+            int anInt = Integer.parseInt("BURN IT DOWN");
             Toast.makeText(StationActivity.this,
                     getString(R.string.station_added_to_favorites), Toast.LENGTH_SHORT).show();
         } else {
